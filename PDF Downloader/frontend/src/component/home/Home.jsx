@@ -46,7 +46,7 @@ export default function Home() {
                                     <a className="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="/add">
                                     <i className='fas fa-plus'></i>&nbsp;Upload File</a>
                                     <a className="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="/list">
-                                    <i className='fas fa-file'></i>&nbsp;Uploaded File</a>
+                                    <i className='fas fa-file'></i>&nbsp;Uploaded Files</a>
                                 </div>
                             </div>
                         </div>
