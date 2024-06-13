@@ -59,12 +59,34 @@ const addPdf = async (req, res) => {
     res.contentType(pdf.contentType);
     res.send(pdf.file);
   };
+
+  
+
+  const deletePdf = async (req, res) => {
+    const pdfId = req.params.id;
+  
+    let pdf;
+    try {
+      pdf = await Pdf.findById(pdfId);
+    } catch (err) {
+      return res.status(404).json({ message: "Restaurant not found!" });
+    }
+  
+    try {
+      await pdf.deleteOne();
+    } catch (err) {
+      return res.status(500).json({ message: "Deleting restaurant failed!", err });
+    }
+  
+    return res.status(200).json({ message: "Restaurant deleted successfully!" });
+  };
   
 
   
   module.exports = {
     addPdf,
     getAllPdf,
-    viewPdf 
+    viewPdf ,
+    deletePdf
     
   };

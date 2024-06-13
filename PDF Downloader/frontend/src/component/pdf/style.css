@@ -112,21 +112,39 @@ body {
   margin: 0;
 }
 
-#pdfList li {
+.pdfItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
-}
-
-#pdfList li a {
-  display: block;
   padding: 10px;
-  text-decoration: none;
-  color: #333;
   border: 1px solid #ccc;
   border-radius: 5px;
   transition: background-color 0.3s, transform 0.3s;
 }
 
-#pdfList li a:hover {
+.pdfItem a {
+  text-decoration: none;
+  color: #333;
+  flex-grow: 1;
+  transition: transform 0.3s;
+}
+
+.pdfItem a:hover {
   background-color: #f2f2f2;
   transform: scale(1.05);
+}
+
+.deleteButton {
+  background-color: #d33;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #b22;
 }

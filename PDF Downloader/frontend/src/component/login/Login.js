@@ -46,7 +46,7 @@ export default function Login() {
         showConfirmButton: false,
         timer: 2000 
       }).then(() => {
-        window.location.assign("/add");
+        window.location.assign("/home");
       });
     } catch (error) {
       console.error(error);
