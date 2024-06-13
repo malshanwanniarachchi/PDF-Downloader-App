@@ -53,6 +53,47 @@ const PdfList = () => {
     }
   };
 
+  const downloadPdf = async (pdfId, pdfName) => {
+    try {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        console.log("User not authenticated. Redirecting to login page.");
+        return;
+      }
+
+      const response = await axios.get(`http://localhost:8000/api/pdf/${pdfId}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        responseType: 'blob', // Important: responseType as 'blob' for downloading files
+      });
+
+      // Create a blob object URL for the response blob
+      const blob = new Blob([response.data], { type: 'application/pdf' });
+      const url = window.URL.createObjectURL(blob);
+
+      // Create a link element, set the URL as its href and add 'download' attribute
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', pdfName); // Set the download attribute with the filename
+      document.body.appendChild(link);
+
+      // Simulate click on the link to trigger the download
+      link.click();
+
+      // Clean up: remove the link and revoke the object URL
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error downloading pdf:', error);
+      Swal.fire(
+        'Error!',
+        'Failed to download the PDF.',
+        'error'
+      );
+    }
+  };
+
   useEffect(() => {
     const fetchPdfs = async () => {
       try {
@@ -77,10 +118,11 @@ const PdfList = () => {
             <li key={pdf._id} className="pdfItem">
               <div className="pdfInfo">
                 <a href={`http://localhost:8000/api/pdf/${pdf._id}`} target="_blank" rel="noopener noreferrer">
-                  {index + 1}. {pdf.Name} 
-                </a> 
+                  {index + 1}. {pdf.Name}
+                </a>
               </div>
               <div>
+                <button className="downloadButton" onClick={() => downloadPdf(pdf._id, pdf.Name)}>Download</button>
                 <button className="deleteButton" onClick={() => removePdf(pdf._id)}>Delete</button>
               </div>
             </li>
