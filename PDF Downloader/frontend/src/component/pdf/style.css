@@ -1,105 +1,132 @@
-
-#pdfName, #pdfFile {
-    width: 30%;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-  }
-  
-  #uploadButton {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  #uploadButton:hover {
-    background-color: #45a049;
-  }
-
-
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url("https://static-cse.canva.com/blob/1210563/10experttipsfordesigningwithablurredbackgroundfeaturedimage.dab0fbf3.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 #uploadPdfContainer {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff; 
-    border: 1px solid #cccccc; 
-    border-radius: 5px;
-    text-align: center; 
-    margin-top: 5%;
-  }
-  
-  #pdfName {
-    width: calc(100% - 20px); 
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-  }
-  
-  #pdfFile {
-    width: calc(100% - 20px); 
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-  }
-  
-  #uploadButton {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  #uploadButton:hover {
-    background-color: #45a049;
-  }
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  opacity: 0.9;
+}
 
- 
+#uploadPdfContainer:hover {
+  transform: scale(1.02);
+}
+
+#uploadPdfContainer h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="file"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+#uploadButton {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+#uploadButton:hover {
+  background: linear-gradient(135deg, #45a049 0%, #4CAF50 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 #pdfListContainer {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff; 
-    border: 1px solid #cccccc; 
-    border-radius: 5px;
-    margin-top: 5%;
-  }
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
   
-  #pdfList {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #pdfList li {
-    margin-bottom: 10px;
-  }
-  
-  #pdfList li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333333;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
-  }
-  
-  #pdfList li a:hover {
-    background-color: #f2f2f2;
-  }
-  
-  
-  
+}
+
+#pdfListContainer:hover {
+  transform: scale(1.02);
+}
+
+#pdfListContainer h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+#errorMessage {
+  color: red;
+  margin-bottom: 20px;
+}
+
+#pdfList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#pdfList li {
+  margin-bottom: 10px;
+}
+
+#pdfList li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#pdfList li a:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.05);
+}

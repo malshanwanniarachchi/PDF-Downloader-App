@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import "./style.css"
+import './style.css';
 import NavBar from '../navBar/NavBar';
 
 const UploadPdf = () => {
@@ -48,21 +48,21 @@ const UploadPdf = () => {
 
   return (
     <div>
-      <NavBar/>
-    <div id="uploadPdfContainer"> 
-      <h2>Upload PDF</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="pdfName">Name:</label>
-          <input type="text" id="pdfName" value={name} onChange={handleNameChange} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="pdfFile">PDF:</label>
-          <input type="file" id="pdfFile" onChange={handleFileChange} required />
-        </div>
-        <button type="submit" id="uploadButton">Upload</button>
-      </form>
-    </div>
+      <NavBar />
+      <div id="uploadPdfContainer"> 
+        <h2><b>Upload PDF</b></h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="pdfName">Name:</label>
+            <input type="text" id="pdfName" value={name} onChange={handleNameChange} required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="pdfFile">PDF:</label>
+            <input type="file" id="pdfFile" onChange={handleFileChange} required />
+          </div>
+          <button type="submit" id="uploadButton">Upload</button>
+        </form>
+      </div>
     </div>
   );
 };

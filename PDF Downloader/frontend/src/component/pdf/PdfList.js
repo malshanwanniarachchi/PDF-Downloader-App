@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import "./style.css"
+import "./style.css";
 import NavBar from '../navBar/NavBar';
 
 const PdfList = () => {
@@ -23,19 +23,19 @@ const PdfList = () => {
   return (
     <div>
       <NavBar/>
-    <div id="pdfListContainer"> 
-      <h2>PDF List</h2>
-      {message && <p id="errorMessage">{message}</p>} 
-      <ul id="pdfList">
-        {pdfs.map((pdf) => (
-          <li key={pdf._id}>
-            <a href={`http://localhost:8000/api/pdf/${pdf._id}`} target="_blank" rel="noopener noreferrer">
-              {pdf.Name}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div id="pdfListContainer"> 
+        <h2><b><center>PDF List</center></b></h2>
+        {message && <p id="errorMessage">{message}</p>} 
+        <ul id="pdfList">
+          {pdfs.map((pdf, index) => (
+            <li key={pdf._id}>
+              <a href={`http://localhost:8000/api/pdf/${pdf._id}`} target="_blank" rel="noopener noreferrer">
+                {index + 1}. {pdf.Name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
