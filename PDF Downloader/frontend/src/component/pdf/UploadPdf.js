@@ -66,6 +66,7 @@ const UploadPdf = () => {
     </div>
     
   );
+  
 };
 
 export default UploadPdf;
