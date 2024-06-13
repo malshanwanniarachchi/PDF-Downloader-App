@@ -47,7 +47,7 @@ const UploadPdf = () => {
   };
 
   return (
-    <div>
+    <div id="wrapper">
       <NavBar />
       <div id="uploadPdfContainer"> 
         <h2><b>Upload PDF</b></h2>
@@ -64,6 +64,7 @@ const UploadPdf = () => {
         </form>
       </div>
     </div>
+    
   );
 };
 
