@@ -1,0 +1,105 @@
+
+#pdfName, #pdfFile {
+    width: 30%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  #uploadButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #uploadButton:hover {
+    background-color: #45a049;
+  }
+
+
+
+#uploadPdfContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px;
+    text-align: center; 
+    margin-top: 5%;
+  }
+  
+  #pdfName {
+    width: calc(100% - 20px); 
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  #pdfFile {
+    width: calc(100% - 20px); 
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  #uploadButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #uploadButton:hover {
+    background-color: #45a049;
+  }
+
+ 
+
+#pdfListContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px;
+    margin-top: 5%;
+  }
+  
+  #pdfList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #pdfList li {
+    margin-bottom: 10px;
+  }
+  
+  #pdfList li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333333;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+  }
+  
+  #pdfList li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  
+  
