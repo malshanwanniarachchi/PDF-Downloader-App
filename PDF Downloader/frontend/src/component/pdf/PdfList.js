@@ -122,8 +122,9 @@ const PdfList = () => {
                 </a>
               </div>
               <div>
+              <button className="deleteButton" onClick={() => removePdf(pdf._id)}>Delete</button>&nbsp;
                 <button className="downloadButton" onClick={() => downloadPdf(pdf._id, pdf.Name)}>Download</button>
-                <button className="deleteButton" onClick={() => removePdf(pdf._id)}>Delete</button>
+                
               </div>
             </li>
           ))}
