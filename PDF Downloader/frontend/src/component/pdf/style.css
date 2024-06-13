@@ -1,3 +1,7 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global styles */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f9fa;
@@ -10,6 +14,7 @@ body {
   background-attachment: fixed;
 }
 
+/* Updated styles for UploadPdf component */
 #uploadPdfContainer {
   max-width: 600px;
   margin: 5% auto;
@@ -25,12 +30,14 @@ body {
 
 #uploadPdfContainer:hover {
   transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #uploadPdfContainer h2 {
   margin-bottom: 20px;
   font-size: 28px;
   color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -42,6 +49,7 @@ body {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
+  color: #555;
 }
 
 .form-group input[type="text"],
@@ -70,7 +78,7 @@ body {
   cursor: pointer;
   font-size: 18px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 #uploadButton:hover {
@@ -78,8 +86,9 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Updated styles for PdfList component */
 #pdfListContainer {
-  max-width: 600px;
+  max-width: 800px;
   margin: 5% auto;
   padding: 20px;
   background-color: #fff;
@@ -87,11 +96,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  
 }
 
 #pdfListContainer:hover {
   transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #pdfListContainer h2 {
@@ -99,6 +108,7 @@ body {
   font-size: 28px;
   color: #333;
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 #errorMessage {
@@ -132,7 +142,7 @@ body {
 
 .pdfItem a:hover {
   background-color: #f2f2f2;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .deleteButton {

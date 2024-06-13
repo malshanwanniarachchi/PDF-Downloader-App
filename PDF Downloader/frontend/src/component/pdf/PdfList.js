@@ -39,6 +39,7 @@ const PdfList = () => {
           'The PDF has been deleted.',
           'success'
         ).then(() => {
+          // Reload the page to reflect changes
           window.location.reload(false);
         });
       }
@@ -67,17 +68,21 @@ const PdfList = () => {
 
   return (
     <div>
-      <NavBar/>
+      <NavBar />
       <div id="pdfListContainer"> 
-        <h2><b><center>PDF List</center></b></h2>
+        <h2 className="pageTitle"><b>Uploaded PDF List</b></h2>
         {message && <p id="errorMessage">{message}</p>} 
         <ul id="pdfList">
           {pdfs.map((pdf, index) => (
             <li key={pdf._id} className="pdfItem">
-              <a href={`http://localhost:8000/api/pdf/${pdf._id}`} target="_blank" rel="noopener noreferrer">
-                {index + 1}. {pdf.Name} 
-              </a> 
-              <button className="deleteButton" onClick={() => removePdf(pdf._id)}>Delete</button>
+              <div className="pdfInfo">
+                <a href={`http://localhost:8000/api/pdf/${pdf._id}`} target="_blank" rel="noopener noreferrer">
+                  {index + 1}. {pdf.Name} 
+                </a> 
+              </div>
+              <div>
+                <button className="deleteButton" onClick={() => removePdf(pdf._id)}>Delete</button>
+              </div>
             </li>
           ))}
         </ul>

@@ -20,7 +20,10 @@ export default function Home() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li className="nav-item"><a className="nav-link" href="/add"><i className='fas fa-plus'></i>&nbsp;Upload</a></li>
-                            <li className="nav-item"><a className="nav-link" href="/list"><i className='fas fa-file'></i>&nbsp;List</a></li>
+                            <div style={{marginLeft:"35px"}}>
+                             <li className="nav-item"><a className="nav-link" href="/list"><i className='fas fa-file'></i>&nbsp;List</a></li>
+                            </div>
+                            
                             
                             <div style={{marginLeft:"35px"}}>
                             <li className="nav-item"><a className="nav-link" href="/"><i className='fas fa-sign-out-alt'></i>&nbsp;Logout</a></li>
@@ -64,7 +67,7 @@ export default function Home() {
             </header>
 
            
-            <section className="bg-light py-5">
+            <section   className="bg-light py-5">
                 <div className="container px-5">
                     <div className="row gx-5 justify-content-center">
                         <div className="col-xxl-8">
