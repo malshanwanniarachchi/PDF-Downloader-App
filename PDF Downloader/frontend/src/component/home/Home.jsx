@@ -36,9 +36,9 @@ export default function Home() {
                         <div className="col-xxl-5">
                            
                             <div className="text-center text-xxl-start">
-                                <div className="badge bg-gradient-primary-to-secondary text-white mb-4"><div className="text-uppercase">Design &middot; Development &middot; Marketing</div></div>
+                                <div className="badge bg-gradient-primary-to-secondary text-white mb-4"><div className="text-uppercase">Download &middot; Upload &middot; View</div></div>
                                 <div className="fs-3 fw-light text-muted">I can help Manage To your System</div>
-                                <h1 className="display-3 fw-bolder mb-5"><span className="text-gradient d-inline">Get online and grow fast</span></h1>
+                                <h2 className="display-3 fw-bolder mb-5"><span className="text-gradient d-inline">Download and Upload your files Easily</span></h2>
                                 <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a className="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="/add">
                                     <i className='fas fa-plus'></i>&nbsp;Upload File</a>
@@ -51,11 +51,11 @@ export default function Home() {
                             
                            
                                    
-    {/* Your homepage animation video */}
+    {/* Your homepage animation video
     <video className="homepage-video" autoPlay loop muted   style={{ borderRadius: '20px', width:"600px"}}>
         <source src="/images/home1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-    </video>
+    </video> */}
                                     
                                 </div>
                             </div>
