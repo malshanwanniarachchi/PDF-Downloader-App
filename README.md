@@ -76,4 +76,5 @@ To run the React application provided, ensure you have Node.js installed on your
 
 
 MONGO_URL = mongodb+srv://malshan2001:malshan2001@restaurant.ne5gthc.mongodb.net/?retryWrites=true&w=majority&appName=restaurant 
+
 PORT = 8000
