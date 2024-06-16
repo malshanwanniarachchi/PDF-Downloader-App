@@ -40,7 +40,7 @@ export default function Home() {
                            
                             <div className="text-center text-xxl-start">
                                 <div className="badge bg-gradient-primary-to-secondary text-white mb-4"><div className="text-uppercase">Download &middot; Upload &middot; View</div></div>
-                                <div className="fs-3 fw-light text-muted">I can help Manage To your System</div>
+                                <div className="fs-3 fw-light text-muted">I can help Manage To your Systems</div>
                                 <h2 className="display-3 fw-bolder mb-5"><span className="text-gradient d-inline">Download and Upload your files Easily</span></h2>
                                 <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a className="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="/add">
