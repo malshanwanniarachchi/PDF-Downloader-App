@@ -69,7 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+
 Instructions on how to run the Application :
 
 To run the React application provided, ensure you have Node.js installed on your system. Clone the repository, navigate to its directory in the terminal, and install dependencies using npm (npm install). If your application interacts with a backend, ensure the backend server is running. Start the React development server with npm start, and the application will launch in your browser at http://localhost:3000. This setup enables you to test and use the application locally, with adjustments made as needed for backend API integration and debugging through browser developer tools.
 
+
+MONGO_URL = mongodb+srv://malshan2001:malshan2001@restaurant.ne5gthc.mongodb.net/?retryWrites=true&w=majority&appName=restaurant 
+
+PORT = 8000
